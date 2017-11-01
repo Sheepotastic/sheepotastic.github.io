@@ -100,6 +100,9 @@ The server is going to get some very big changes and I invite all of you to ask 
           <p class="staff-postion"><em data-new-link="true">Administrator</em>
         </div>
       </div>
+  </div>
+  <script type="text/javascript" src="https://github.com/ldilley/minestat"></script>
+  <script type="text/javascript" src="js/status.js"></script>
       <a href="#" id="Features" class="w-inline-block link-features"></a>
     </div>
   </div>
@@ -194,37 +197,5 @@ The server is going to get some very big changes and I invite all of you to ask 
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-</body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Server Status</title>
-<script src="" rel="nofollow" target="_blank">http://code.jquery.com/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;
-</head>
-<body>
-//Server Applet by BtheDestroyer
-<p id="lastUpdate"></p>
-<p id="version">Loading Minecraft Version...</p>
-<p id="serverVersion">Loading Server Version...</p>
-<h1 id="online">Loading Server...</h1>
-<h2>List of online players:</h2><p id="playerListHTML">Loading players...</p>
-<script>$.getJSON('https://api.syfaro.net/minecraft/1.2/server/info?ip=[b][u]Sheepotastic.shservers.net[/u][/b]&port=25568', function(data) {
-document.getElementById('lastUpdate').textContent="Last Update: "+data.last_update+"(GMT-6)";
-document.getElementById('version').textContent="Minecraft Version: MC Release V. "+data.version;
-document.getElementById('serverVersion').textContent="Server MOTD: "+data.motd;
-if(data.status=="success"){
-document.getElementById('online').textContent = "Server is online!";
-if(data.players === 0){
-	 document.getElementById('playerListHTML').textContent = "No players are currently online.";
-}else{
-	 document.getElementById('playerListHTML').textContent = data.playerList;
-}
-}else{
-document.getElementById('online').textContent = "Server is not online... try again later.";
-document.getElementById('playersListHTML').textContent = "Server is not online... try again later.";
-}
-});</script>
-//Server Applet by BtheDestroyer
 </body>
 </html>
