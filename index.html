@@ -104,21 +104,14 @@ The server is going to get some very big changes and I invite all of you to ask 
     </div>
   </div>
 </div>
-<?php
-require_once('minestat.php');
-
-$ms = new MineStat("185.42.222.151", 25568);
-printf("Minecraft server status of %s on port %s:<br>", $ms->get_address(), $ms->get_port());
-if($ms->is_online())
-{
-  printf("Server is online running version %s with %s out of %s players.<br>", $ms->get_version(), $ms->get_current_players(), $ms->get_max_players());
-  printf("Message of the day: %s<br>", $ms->get_motd());
-}
-else
-{
-  printf("Server is offline!<br>");
-}
-?>
+       </div>
+        <div class="row">
+            <!-- Widget Bar -->
+            <div class="col l3 s12">
+                    <div class="box card-panel z-depth-2">
+                        <h5>Server Status</h5> The server is <b><span data-playercounter-ip="sheepotastic.shservers.net" data-playercounter-status>...</span></b> with
+                        <b><span data-playercounter-ip="sheepotastic.shservers.net">0</span>/56</b> players.
+                    </div>
     </div>
   </div>
   <div class="w-section w-hidden-small w-hidden-tiny rules-section">
