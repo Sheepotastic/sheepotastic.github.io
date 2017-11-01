@@ -100,13 +100,25 @@ The server is going to get some very big changes and I invite all of you to ask 
           <p class="staff-postion"><em data-new-link="true">Administrator</em>
         </div>
       </div>
-  </div>
-  <script type="text/javascript" src="https://github.com/ldilley/minestat"></script>
-  <script type="text/javascript" src="js/status.js"></script>
       <a href="#" id="Features" class="w-inline-block link-features"></a>
     </div>
   </div>
 </div>
+<?php
+require_once('minestat.php');
+
+$ms = new MineStat("185.42.222.151", 25568);
+printf("Minecraft server status of %s on port %s:<br>", $ms->get_address(), $ms->get_port());
+if($ms->is_online())
+{
+  printf("Server is online running version %s with %s out of %s players.<br>", $ms->get_version(), $ms->get_current_players(), $ms->get_max_players());
+  printf("Message of the day: %s<br>", $ms->get_motd());
+}
+else
+{
+  printf("Server is offline!<br>");
+}
+?>
     </div>
   </div>
   <div class="w-section w-hidden-small w-hidden-tiny rules-section">
