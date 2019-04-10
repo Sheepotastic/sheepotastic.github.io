@@ -1,0 +1,13 @@
+[class^="col-"] {
+    display: flex;
+}
+
+a {
+    color: inherit;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.726);
+    overflow: hidden;
+    color: blue;
+}
