@@ -1,43 +1,97 @@
+<!-- Proudly created by BlexieKing -->
+<!-- https://www.spigotmc.org/members/blexieking.168027 -->
+
+
 <!DOCTYPE html>
-<html lang="fi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/wikisheet.css">
-        <title>Sheepotastic Wiki</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <div class="col-7">
-                    <h1>Sheep-o-tastic Server Wiki</h1>
-                </div>
-                <div class="col-sm">
-                    <a class="btn btn-outline-primary" href=../index.html role="button">Home</a>
-                </div>
-                <div class="col-sm">
-                    <a href=../news.html>News</a>
-                </div>
-                <div class="col-sm">
-                    <a href="http://sheep-o-tastic.enjin.com/forum">Forums</a>    
-                </div>
-                <div class="col-sm">
-                    <a href="wikiindex.html">Wiki</a>
-                </div>
-            </nav>
-            <div class="container-background">
-                <img class="img-fluid" src="../img/back.png" alt="Background image">
-            </div>
-        </div>
-        <div class="jumbotron-fluid jumbotron">
-            <div class="container">
-                <h1 class="display-4" id="about">Sheep-o-tastic Server Wiki</h1></div>
-                <p class="lead text-center">Hello everyone! Welcome to the Sheep-o-tastic Wiki. Sheep-o-tastic is a Casual Survival Minecraft server with lots to do and a friendly community. As such, most people would need some form of guidance for all the new plugins and systems (some of them custom to our server) on our server. We have loads of content that keep the gameplay fresh and unlike any other server. You can join our server at <strong>Sheepotastic.vsmc.co</strong> .</p>
-            </div>
-        </div>
-        <h1>Plugins and Mechanics</h1>
-        <div class="d-flex justify-items-center">
+<html>
+<head>
+	<title>Sheep-o-tastic Wiki</title>
+	<meta name="description" content="Sheep-o-tastic is a Casual, Friendly Minecraft server with loads of custom and extra content for your enjoyment. 'Sheepotastic.vsmc.co'">
+	<meta name="keywords" content="Sheep-o-tastic, sheepotastic, minecraft, minecraft server, survival server, unique, friendly, community">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script src="/js/playercount.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<ul class="nav-items" id="nav-items">
+				<li onclick="mobile()" class="icon fa fa-bars fa-2x"></li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://sheepotastic.buycraft.net/category/1220833">Donate</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://sheep-o-tastic.enjin.com/forum">Forums</a>
+				</li>
+				<div class="log"><img alt="MyServer Logo" class="logo" src="../img/logo.png"></div>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://149.202.81.39:7373/?worldname=world&mapname=flat&zoom=2&x=364&y=64&z=474#">Map</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="https://discord.gg/hGDtynC">Discord</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="../wiki/wikiindex.html">Wiki</a>
+				</li>
+			</ul>
+			<div class="mnav" id="mnav">
+				<li class="i">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="i">
+					<a href="http://sheepotastic.buycraft.net/category/1220833">Donate</a>
+				</li>
+				<li class="i">
+					<a href="http://sheep-o-tastic.enjin.com/forum">Forums</a>
+				</li>
+				<li class="i">
+					<a href="http://149.202.81.39:7373/?worldname=world&mapname=flat&zoom=2&x=364&y=64&z=474#">Map</a>
+				</li>
+				<li class="i">
+					<a href="https://discord.gg/hGDtynC">Discord</a>
+				</li>
+				<li class="i">
+					<a href="../wiki/wikiindex.html">Wiki</a>
+				</li>
+			</div>
+		</div>
+
+		<div class="hero wiki" id="main">
+                <h1>Sheep-o-tastic!</h1>
+                <!-- Replace play.myserver.net with your IP address! -->
+                <!-- Make sure to do it for both examples below. -->
+                <p class="info">Join <span data-playercounter-ip="sheepotastic.vsmc.co" data-playercounter-format:"{online}">
+                0</span> other players on <span>sheepotastic.vsmc.co</span></p>
+		</div>
+	</header>
+	<hr>
+	<div class="wikimain">
+        <h2>PLUGINS AND MECHANICS</h2>
+		<div class="d-flex justify-items-center">
             <div class="col-3">
                 <div class="card" style="width=18rem;">
                     <img class="card-img-top" src="../img/back.jpg" alt="This website">
@@ -66,7 +120,7 @@
                     
                         <div class="dropdown-menu" aria-labelledby="dropdownmenulink">
                             <a class="dropdown-item" href="wikibrew.html">Brewery</a>
-                            <a class="dropdown-item" href="wikiart.html">Artmap</a>
+                            <a class="dropdown-item" href="https://github.com/Fupery/ArtMap/wiki">Artmap</a>
                             <a class="dropdown-item" href="wikifurn.html">DiceFurniture</a>
                             <a class="dropdown-item" href="wikijuke.html">Jukebox</a>
                         </div>
@@ -78,13 +132,13 @@
                     <img class="card-img-top" src="../img/sf.png" alt="Question Mark">
                     <div class="card-body">
                         <h5 class="card-title">Game Changers</h5>
-                        <p class="card-text">A list and complete description of our larger, game changing plugins. These plugins are all nearly mod-sized and take a bit to understand. All are optional to use (except mcmmo), but very fun to play with. (Craftbook, Slimefun, Custom Recipes, etc)</p>
+                        <p class="card-text">A list and complete description of our larger, game changing plugins. These plugins are all nearly mod-sized and take a bit to understand. All are optional to use (except mcmmo), but very fun to play with. (Craftbook, Slimefun, etc)</p>
                         <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mod-sized plugins</a>
                     
                         <div class="dropdown-menu" aria-labelledby="dropdownmenulink">
                             <a class="dropdown-item" href="wikicraf.html">Craftbook</a>
                             <a class="dropdown-item" href="wikisli.html">Slimefun</a>
-                            <a class="dropdown-item" href="wikimcm.html">McMMO</a>
+                            <a class="dropdown-item" href="https://mcmmo.org/wiki/Main_Page">McMMO</a>
                         </div>
                     </div>
                 </div>
@@ -105,71 +159,82 @@
                     </div>
                 </div>
             </div>
-        </div> 
+			<hr>
+        </div>
         <hr>
-        <h1>Server Systems</h1>
+        <h2>Server Systems</h2>
         <div class="d-flex justify-items-center">
-            <div class="col-4">
-                <div class="card" style="width=18rem;">
-                    <img class="card-img-top" src="../img/race.png" alt="This website">
-                    <div class="card-body">
-                        <h5 class="card-title">Races</h5>
-                        <p class="card-text">Choose from 5 different races to start off on the server, each one having 3 passive skills (1 of which you can use with crouching), 2 negative passive skills, and 2 skills they can use at will!</p>
-                        <a class="btn btn-primary" href="wikirace.html">Races</a>
+                <div class="col-4">
+                    <div class="card" style="width=18rem;">
+                        <img class="card-img-top" src="../img/race.png" alt="This website">
+                        <div class="card-body">
+                            <h5 class="card-title">Races</h5>
+                            <p class="card-text">Choose from 5 different races to start off on the server, each one having 3 passive skills (1 of which you use when crouching), 2 negative passive skills, and 2 skills they can use at will!</p>
+                            <a class="btn btn-primary" href="wikirace.html">Races</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width=18rem;">
-                    <img class="card-img-top" src="../img/race.png" alt="This website">
-                    <div class="card-body">
-                        <h5 class="card-title">Classes</h5>
-                        <p class="card-text">This system will be announced at a later date, it will work similarly to races but with less passives and more skills with levels.</p>
-                        <a class="btn btn-success" href="#">Classes</a>
+                <div class="col-4">
+                    <div class="card" style="width=18rem;">
+                        <img class="card-img-top" src="../img/race.png" alt="This website">
+                        <div class="card-body">
+                            <h5 class="card-title">Classes</h5>
+                            <p class="card-text">This system will be announced at a later date, it will work similarly to races but with less passives and more skills with levels.</p>
+                            <a class="btn btn-success" href="#">Classes</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width=18rem;">
-                    <img class="card-img-top" src="../img/val.png" alt="This website">
-                    <div class="card-body">
-                        <h5 class="card-title">Difficulty Settings</h5>
-                        <p class="card-text">Our server contains a warp where you can specifically set if certain plugins affect you, for if you're wanting a bit of an extra challenge. This can include Diseases, Thirst, Keepinventory, and more!</p>
-                        <a class="btn btn-info" href="wikidif.html">Difficulty Settings</a>
+                <div class="col-4">
+                    <div class="card" style="width=18rem;">
+                        <img class="card-img-top" src="../img/dif.png" alt="This website">
+                        <div class="card-body">
+                            <h5 class="card-title">Difficulty Settings</h5>
+                            <p class="card-text">Our server contains a warp where you can specifically set if certain plugins affect you, for if you're wanting a bit of an extra challenge. This can include Diseases, Thirst, Keepinventory, and more!</p>
+                            <a class="btn btn-info" href="wikidif.html">Difficulty Settings</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <hr>
-        <h1>General Server Info</h1>
+        <h2>General Server Info</h2>
         <div class="d-flex justify-items-center">
-            <div class="col-6">
-                <div class="card" style="width=18rem;">
-                    <img class="card-img-top" src="../img/tem.png" alt="This website">
-                    <div class="card-body">
-                        <h5 class="card-title">Server History</h5>
-                        <p class="card-text">Not necessary knowledge, but mainly for those interested in hearing about the going ons of the server in the past. Past itterations and changes made since the beginning.</p>
-                        <a class="btn btn-dark" href="wikihis.html">History</a>
+                <div class="col-6">
+                    <div class="card" style="width=18rem;">
+                        <img class="card-img-top" src="../img/back.png" alt="This website">
+                        <div class="card-body">
+                            <h5 class="card-title">Server History</h5>
+                            <p class="card-text">Not necessary knowledge, but mainly for those interested in hearing about the going ons of the server in the past. Past itterations and changes made since the beginning.</p>
+                            <a class="btn btn-dark" href="wikihis.html">History</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card" style="width=18rem;">
+                        <img class="card-img-top" src="../img/art.png" alt="This website">
+                        <div class="card-body">
+                            <h5 class="card-title">Server Rules</h5>
+                            <p class="card-text">Just a list of the server rules, this is available from /rules, in-game, but also available here for players to view.</p>
+                            <a class="btn btn-primary" href="wikirule.html">Rules</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="card" style="width=18rem;">
-                    <img class="card-img-top" src="../img/art.png" alt="This website">
-                    <div class="card-body">
-                        <h5 class="card-title">Server Rules</h5>
-                        <p class="card-text">Just a list of the server rules, this is available from /rules, in-game, but also available here for players to view.</p>
-                        <a class="btn btn-primary" href="wikirule.html">Rules</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-    </html>
-    </head>
+		
+		</div>
+	</div>
+	<footer>
+		<div>
+			<img alt="MyServer Logo" src="../img/logo.png" size="40%">
+			<p>Copyright &copy; MyServer 2017</p>
+		</div>
+		<div>
+			<p>Website edited by Dart</p>
+			<p>Template created <a href="https://bybilly.uk">ByBilly</a></p>
+		</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

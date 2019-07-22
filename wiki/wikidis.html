@@ -88,59 +88,87 @@
 	<div class="wikimain">
         <div class="jumbotron-fluid jumbotron">
             <div class="container">
-                <h1 class="display-4" id="about">Survival Mechanics</h1></div>
+                <h1 class="display-4" id="about">Diseases</h1></div>
                 <p class="lead text-center">
-                    This plugin allows you to have better control over your player's movements. It allows things such as crawling, wall climbing, 
-                    wall kicks, sliding, and more. It takes a while to get used to, but once you're used to it, it improves exploration and 
-                    general movement greatly.
+                    This plugin <em>must be enabled in order to work</em>, you can access it at <strong>/warp difficulty</strong>. This plugin introduces an
+                    array of diseases the player can recieve due to being in certain environments or being near other sick players. Theses diseases can all be cured
+                    by crafting a particular potion. Immunity can be built up to a particular disease by curing it or taking a vaccine against it. The diseases all cause
+                    varying negative effects and the effects worsen as the condition does.
+                    Being in hot areas can cause fatigue and confusion. Being in cold areas can cause pneumonia, slowness, or blindness.
+                    This plugin works well in tandom with Thirst and to create a more realistic and survival experience if the player so chooses.
                 </p>
             </div>
+        </div>
+        <div class="alert alert-primary" role="alert">
+            If you have both Thirst and Diseases enabled, You must cook water bottles before drinking or you risk contracting cholera. If just thirst is enabled, you can drink from any water source freely.
         </div>
         <div class="container-fluid">
             <div class="col-10">
                 <table class="table">
                     <thead>
-                        <tr><th scope="col">Movement type</th>
-                        <th scope="col">Controls</th>
-                        <th scope="col">Description</th>                        
+                        <tr><th scope="col">Disease</th>
+                        <th scope="col">Symptoms</th>
+                        <th scope="col">Contraction</th>                    
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Crawl</th>
-                            <td>Double tap sneak while on the ground</td>
-                            <td>This allows you to sneak along the ground, even entering 1 block spaces.</td>
+                            <th scope="row">Yellow Fever</th>
+                            <td>High Fever and sneezing. Contagious</td>
+                            <td>Being in Jungle Biomes.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Slide</th>
-                            <td>Double tap sneak while running</td>
-                            <td>You quickly slide across the ground, this is able to be used in 1 block spaces as well.</td>
+                            <th scope="row">Whooping Cough</th>
+                            <td>Wheezing and Coughing.</td>
+                            <td>Being in Desert Biomes.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Wallkick</th>
-                            <td>Press sneak while looking at a wall and jumping</td>
-                            <td>Kick off the wall facing you, sending you upward and backwards.</td>
+                            <th scope="row">Plague</th>
+                            <td>High Fever, Sneezing, Vomiting. Contagious</td>
+                            <td>Zombie Bite</td>
                         </tr>
                         <tr>
-                            <th scope="row">Roof Hang</th>
-                            <td>Right click the block above you while jumping (Empty handed)</td>
-                            <td>Use this to prevent yourself from dropping into a potentially dangerous situation</td>
+                            <th scope="row">Cholera</th>
+                            <td>Vomiting</td>
+                            <td>Ingesting poluted water</td>
                         </tr>
                         <tr>
-                            <th scope="row">Climb</th>
-                            <td>Right click the wall infront of you while jumping</td>
-                            <td>Allows you to climb as if there were vines there, against any flat wall.</td>
+                            <th scope="row">Broken Leg</th>
+                            <td>Slowness until mended</td>
+                            <td>Taking fall damage.</td>
                         </tr>
                         <tr>
-                            <th scope="row">Mobkick</th>
-                            <td>Jump and sneak while looking at a mob in close range</td>
-                            <td>Does minimal damage but knocks back nearby mobs, allowing for more spacing.</td>
+                            <th scope="row">Pneumonia</th>
+                            <td>Slowness, Reduced breath in water, Coughing.</td>
+                            <td>Extended stay in cold biomes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rabies</th>
+                            <td>Fever, Vomiting, Confusion, speed, strength, heart failure.</td>
+                            <td>Bite from infected wolf</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">The Pox</th>
+                            <td>Fever, Sneezing, vomiting, blindness, weakness. Contagious</td>
+                            <td>Being near too many animals.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <hr>
+        <div class="jumbotron-fluid jumbotron">
+            <div class="container">
+                <h1 class="display-4" id="about">Fighting the Effects</h1></div>
+                <p class="lead text-center">
+                    The harsher biomes and enviornments now mean that trips must be planned to some extent. The cold can be fought by making a campfire,
+                    being near lava, or simply carrying a heat source in hand (Torches, lava bucket, etc.). Warm milk can also help defeat the effects a bit
+                    by putting a milk bucket in the furnace, however, the milk will eventually cool down. The heat can be fought to a lesser extent, mainly by
+                    dipping into water or drinking cold water by putting snowballs with a bottle of water in a bench together. These will also warm up as time goes by
+                    so drink them quickly.
+                </p>
+            </div>
+        </div>
         <div class="col-10">
                 <table class="table">
                     <thead>
@@ -150,8 +178,16 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">/sm toggle</th>
-                            <td>Displays a menu of each survival mechanic movement, these can be clicked to be toggled off for yourself if you dislike any of them.</td>
+                            <th scope="row">/disease check</th>
+                            <td>Check your current health status.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/disease remedy list</th>
+                            <td>Show a list of crafting recipes to remedy any of the diseases.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/temp</th>
+                            <td>This can be used to check the player's current condition.</td>
                         </tr>
                     </tbody>
                 </table>
