@@ -1,0 +1,211 @@
+<!-- Proudly created by BlexieKing -->
+<!-- https://www.spigotmc.org/members/blexieking.168027 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sheep-o-tastic Wiki</title>
+	<meta name="description" content="Sheep-o-tastic is a Casual, Friendly Minecraft server with loads of custom and extra content for your enjoyment. 'Sheepotastic.vsmc.co'">
+	<meta name="keywords" content="Sheep-o-tastic, sheepotastic, minecraft, minecraft server, survival server, unique, friendly, community">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script src="/js/playercount.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="https://use.fontawesome.com/30155533f0.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript">
+		function mobile() {
+			var bars = document.getElementById("mnav");
+			if(bars.className === "mnav") {
+				bars.className += " responsive";
+			} else {
+				bars.className = "mnav";
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="nav">
+			<ul class="nav-items" id="nav-items">
+				<li onclick="mobile()" class="icon fa fa-bars fa-2x"></li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://sheepotastic.buycraft.net/category/1220833">Donate</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://sheep-o-tastic.enjin.com/forum">Forums</a>
+				</li>
+				<div class="log"><img alt="MyServer Logo" class="logo" src="../img/logo.png"></div>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="http://149.202.81.39:7373/?worldname=world&mapname=flat&zoom=2&x=364&y=64&z=474#">Map</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="https://discord.gg/hGDtynC">Discord</a>
+				</li>
+				<li class="h">
+					<div class="overlay"></div>
+					<a href="../wiki/wikiindex.html">Wiki</a>
+				</li>
+			</ul>
+			<div class="mnav" id="mnav">
+				<li class="i">
+					<a href="../index.html">Home</a>
+				</li>
+				<li class="i">
+					<a href="http://sheepotastic.buycraft.net/category/1220833">Donate</a>
+				</li>
+				<li class="i">
+					<a href="http://sheep-o-tastic.enjin.com/forum">Forums</a>
+				</li>
+				<li class="i">
+					<a href="http://149.202.81.39:7373/?worldname=world&mapname=flat&zoom=2&x=364&y=64&z=474#">Map</a>
+				</li>
+				<li class="i">
+					<a href="https://discord.gg/hGDtynC">Discord</a>
+				</li>
+				<li class="i">
+					<a href="../wiki/wikiindex.html">Wiki</a>
+				</li>
+			</div>
+		</div>
+
+		<div class="wikipage">
+                <h1>Sheep-o-tastic!</h1>
+		</div>
+	</header>
+	<hr>
+	<div class="wikimain">
+        <div class="jumbotron-fluid jumbotron">
+            <div class="container">
+                <h1 class="display-4" id="about">Diseases</h1></div>
+                <p class="lead text-center">
+                    This plugin <em>must be enabled in order to work</em>, you can access it at <strong>/warp difficulty</strong>. This plugin introduces an
+                    array of diseases the player can recieve due to being in certain environments or being near other sick players. Theses diseases can all be cured
+                    by crafting a particular potion. Immunity can be built up to a particular disease by curing it or taking a vaccine against it. The diseases all cause
+                    varying negative effects and the effects worsen as the condition does.
+                    Being in hot areas can cause fatigue and confusion. Being in cold areas can cause pneumonia, slowness, or blindness.
+                    This plugin works well in tandom with Thirst and to create a more realistic and survival experience if the player so chooses.
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-primary" role="alert">
+            If you have both Thirst and Diseases enabled, You must cook water bottles before drinking or you risk contracting cholera. If just thirst is enabled, you can drink from any water source freely.
+        </div>
+        <div class="container-fluid">
+            <div class="col-10">
+                <table class="table">
+                    <thead>
+                        <tr><th scope="col">Disease</th>
+                        <th scope="col">Symptoms</th>
+                        <th scope="col">Contraction</th>                    
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Yellow Fever</th>
+                            <td>High Fever and sneezing. Contagious</td>
+                            <td>Being in Jungle Biomes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Whooping Cough</th>
+                            <td>Wheezing and Coughing.</td>
+                            <td>Being in Desert Biomes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plague</th>
+                            <td>High Fever, Sneezing, Vomiting. Contagious</td>
+                            <td>Zombie Bite</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cholera</th>
+                            <td>Vomiting</td>
+                            <td>Ingesting poluted water</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Broken Leg</th>
+                            <td>Slowness until mended</td>
+                            <td>Taking fall damage.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pneumonia</th>
+                            <td>Slowness, Reduced breath in water, Coughing.</td>
+                            <td>Extended stay in cold biomes.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rabies</th>
+                            <td>Fever, Vomiting, Confusion, speed, strength, heart failure.</td>
+                            <td>Bite from infected wolf</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">The Pox</th>
+                            <td>Fever, Sneezing, vomiting, blindness, weakness. Contagious</td>
+                            <td>Being near too many animals.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="jumbotron-fluid jumbotron">
+            <div class="container">
+                <h1 class="display-4" id="about">Fighting the Effects</h1></div>
+                <p class="lead text-center">
+                    The harsher biomes and enviornments now mean that trips must be planned to some extent. The cold can be fought by making a campfire,
+                    being near lava, or simply carrying a heat source in hand (Torches, lava bucket, etc.). Warm milk can also help defeat the effects a bit
+                    by putting a milk bucket in the furnace, however, the milk will eventually cool down. The heat can be fought to a lesser extent, mainly by
+                    dipping into water or drinking cold water by putting snowballs with a bottle of water in a bench together. These will also warm up as time goes by
+                    so drink them quickly.
+                </p>
+            </div>
+        </div>
+        <div class="col-10">
+                <table class="table">
+                    <thead>
+                        <tr><th scope="col">Commands</th>
+                        <th scope="col">Usage/Details</th>                       
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">/disease check</th>
+                            <td>Check your current health status.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/disease remedy list</th>
+                            <td>Show a list of crafting recipes to remedy any of the diseases.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">/temp</th>
+                            <td>This can be used to check the player's current condition.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+    <hr>
+	<footer>
+		<div>
+			<img alt="MyServer Logo" src="../img/logo.png" size="40%">
+			<p>Copyright &copy; MyServer 2017</p>
+		</div>
+		<div>
+			<p>Website edited by Dart</p>
+			<p>Template created <a href="https://bybilly.uk">ByBilly</a></p>
+		</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
